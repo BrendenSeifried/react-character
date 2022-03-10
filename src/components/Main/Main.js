@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
-import Head from '../../components/Head/Head';
-import Middle from '../../components/Middle/Middle';
-import Bottom from '../../components/Bottom/Bottom';
+import Select from '../../components/Select/Select';
+// import Head from '../../components/Head/Head';
+// import Middle from '../../components/Middle/Middle';
+// import Bottom from '../../components/Bottom/Bottom';
 import Phrase from '../../components/Phrase/Phrase';
+import Preview from '../../components/Preview/Preview';
 
 import './Main.css';
 
@@ -15,10 +17,20 @@ export default function Main() {
 
   return ( 
     <main>
-      <Head />
+      {/* <Head />
       <Middle />
-      <Bottom />
+      <Bottom /> */}
+      <Preview 
+        head={head} 
+        middle={middle} 
+        bottom={bottom}
+      />
       <Phrase />
+      <Select 
+        setHead={setHead} 
+        setMiddle={setMiddle} 
+        setBottom={setBottom}
+      />
     </main>
 
   );

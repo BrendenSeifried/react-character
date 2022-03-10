@@ -30,6 +30,7 @@ import React from 'react';
 import './App.css';
 
 import Main from './components/Main/Main';
+import Select from './components/Select/Select';
 import Head from './components/Head/Head';
 import Middle from './components/Middle/Middle';
 import Bottom from './components/Bottom/Bottom';
@@ -41,6 +42,7 @@ function App() {
   return (
     <div className="App">
       <Main />
+      <Select />
       <Head />
       <Middle />
       <Bottom />
