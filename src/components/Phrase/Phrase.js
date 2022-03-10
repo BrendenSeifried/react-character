@@ -1,4 +1,11 @@
-// import React from 'react';
-// import './Phrase.css';
+import './Phrase.css';
 
-// export default function Phrase({});
+import React from 'react';
+
+export default function Phrase() {
+  return (
+    <div>Phrase</div>
+  );
+}
+
+

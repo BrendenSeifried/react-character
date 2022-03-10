@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
 
-import Select from '../../components/Select/Select';
-// import Head from '../../components/Head/Head';
-// import Middle from '../../components/Middle/Middle';
-// import Bottom from '../../components/Bottom/Bottom';
+import Head from '../../components/Head/Head';
+import Middle from '../../components/Middle/Middle';
+import Bottom from '../../components/Bottom/Bottom';
 import Phrase from '../../components/Phrase/Phrase';
 import Preview from '../../components/Preview/Preview';
 
 import './Main.css';
 
 export default function Main() {
-  const [head, setHead] = useState('');
-  const [middle, setMiddle] = useState('');
-  const [bottom, setBottom] = useState('');
-  const [phrase, setPhrase] = useState('');
+  const [headimg, setHead] = useState('bird');
+  const [middleimg, setMiddle] = useState('bird');
+  const [bottomimg, setBottom] = useState('bird');
+  const [phraseimg, setPhrase] = useState('');
 
   return ( 
     <main>
-      {/* <Head />
-      <Middle />
-      <Bottom /> */}
+      <Head setHead={ setHead } 
+        headimg={headimg}/>
+
+      <Middle setMiddle={ setMiddle } 
+        middleimg={middleimg}/>
+
+      <Bottom setBottom={ setBottom } 
+        bottomimg={bottomimg}/>
+        
       <Preview 
-        head={head} 
-        middle={middle} 
-        bottom={bottom}
+        headimg={headimg} 
+        middleimg={middleimg} 
+        bottomimg={bottomimg}
       />
       <Phrase />
-      <Select 
-        setHead={setHead} 
-        setMiddle={setMiddle} 
-        setBottom={setBottom}
-      />
     </main>
 
   );
