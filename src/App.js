@@ -29,11 +29,11 @@ import React from 'react';
 
 import './App.css';
 
-import Main from './components/Main/Main/';
+import Main from './components/Main/Main';
 import Head from './components/Head/Head';
 import Middle from './components/Middle/Middle';
 import Bottom from './components/Bottom/Bottom';
-import Phrase from './components/Phrase/PHrase';
+import Phrase from './components/Phrase/Phrase';
 
 
 
