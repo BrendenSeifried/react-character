@@ -12,4 +12,14 @@ export default function Main() {
   const [middle, setMiddle] = useState('');
   const [bottom, setBottom] = useState('');
   const [phrase, setPhrase] = useState('');
+
+  return ( 
+    <main>
+      <Head />
+      <Middle />
+      <Bottom />
+      <Phrase />
+    </main>
+
+  );
 }
