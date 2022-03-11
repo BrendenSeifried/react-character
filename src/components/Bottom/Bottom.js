@@ -11,8 +11,8 @@ export default function Middle({ setBottom }) {
             setBottom(e.target.value)}
         >
           <option value="blue">Blue</option>
-          <option value="dress">Dress</option>
-          <option value="pink">Pink</option>
+          <option value="dog">Dog</option>
+          <option value="leg">Leg</option>
           <option value="white">White</option>
         </select>
       </label>

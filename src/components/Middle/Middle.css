@@ -1,7 +1,3 @@
-.picker {
-    height: 200px;
-    width: 200px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+.picker2 {
+    bottom: 50%;
+} 

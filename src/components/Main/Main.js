@@ -10,27 +10,31 @@ import './Main.css';
 
 export default function Main() {
   const [headimg, setHead] = useState('bird');
-  const [middleimg, setMiddle] = useState('bird');
-  const [bottomimg, setBottom] = useState('bird');
+  const [middleimg, setMiddle] = useState('blue');
+  const [bottomimg, setBottom] = useState('blue');
   const [phraseimg, setPhrase] = useState('');
 
   return ( 
     <main>
-      <Head setHead={ setHead } 
-        headimg={headimg}/>
+      <div className='controls'>
+        <Head setHead={ setHead } 
+          headimg={headimg}/>
 
-      <Middle setMiddle={ setMiddle } 
-        middleimg={middleimg}/>
+        <Middle setMiddle={ setMiddle } 
+          middleimg={middleimg}/>
 
-      <Bottom setBottom={ setBottom } 
-        bottomimg={bottomimg}/>
-        
+        <Bottom setBottom={ setBottom } 
+          bottomimg={bottomimg}/>
+        <Phrase />
+      </div>
+      
       <Preview 
         headimg={headimg} 
         middleimg={middleimg} 
         bottomimg={bottomimg}
       />
-      <Phrase />
+      
+     
     </main>
 
   );
