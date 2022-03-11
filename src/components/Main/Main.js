@@ -12,7 +12,8 @@ export default function Main() {
   const [headimg, setHead] = useState('bird');
   const [middleimg, setMiddle] = useState('blue');
   const [bottomimg, setBottom] = useState('blue');
-  const [phraseimg, setPhrase] = useState('');
+  const [phrase, setPhrase] = useState('');
+  const [phraseArray, setPhraseArray] = useState([]);
 
   return ( 
     <main>
@@ -26,8 +27,11 @@ export default function Main() {
         <Bottom setBottom={ setBottom } 
           bottomimg={bottomimg}/>
 
-        <Phrase setPhrase={ setPhrase } 
-          phraseimg={phraseimg}
+        <Phrase 
+          setPhrase={ setPhrase } 
+          phrase={phrase}
+          phraseArray={phraseArray}
+          setPhraseArray={setPhraseArray}
         />
       </div>
       

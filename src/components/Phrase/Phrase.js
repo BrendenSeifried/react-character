@@ -2,27 +2,30 @@ import './Phrase.css';
 
 import React from 'react';
 
-export default function Phrase({ setPhrase }) {
+export default function Phrase({ setPhrase, phrase, phraseArray, setPhraseArray }) {
   const logPhrase = () => {
-    setPhrase((prevState) => [...prevState, setPhrase]);
+    setPhraseArray((prevState) => [...prevState, phrase]);
   };
   return (
     <div>
       <label>
     Add a catch phrase
-        {/* <input id="middle-dropdown" 
+        <input id="phrase-stuff" 
+          value={phrase}
+          type="text"
           onChange={(e) => 
             setPhrase(e.target.value)}
-        /> */}
-        <input></input>
+        /> 
+        
         <button id="catchphrase-button" 
           onClick={ 
             logPhrase
           }>
           Add</button>
       </label>
+
       <ul>
-        {logPhrase.map((data)=> (
+        {phraseArray.map((data)=> (
           <li key={data}>{data}</li>
         ))};
       </ul>
