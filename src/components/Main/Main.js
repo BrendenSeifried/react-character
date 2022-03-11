@@ -25,7 +25,10 @@ export default function Main() {
 
         <Bottom setBottom={ setBottom } 
           bottomimg={bottomimg}/>
-        <Phrase />
+
+        <Phrase setPhrase={ setPhrase } 
+          phraseimg={phraseimg}
+        />
       </div>
       
       <Preview 
