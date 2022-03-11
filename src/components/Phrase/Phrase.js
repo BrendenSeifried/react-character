@@ -27,7 +27,7 @@ export default function Phrase({ setPhrase, phrase, phraseArray, setPhraseArray 
       <ul>
         {phraseArray.map((data)=> (
           <li key={data}>{data}</li>
-        ))};
+        ))}
       </ul>
     </div>
 
