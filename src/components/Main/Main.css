@@ -10,6 +10,10 @@ main{
     background-size: cover;
     color:aliceblue;
     font-weight: bolder;
+    height: 100%; 
     
+}
+.controls{
+    background-color: rgba(0, 0, 0, 0.363);
 }
 
