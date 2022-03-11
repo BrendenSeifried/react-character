@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import back from './back.jpg';
 
 import Head from '../../components/Head/Head';
 import Middle from '../../components/Middle/Middle';
@@ -16,7 +17,10 @@ export default function Main() {
   const [phraseArray, setPhraseArray] = useState([]);
 
   return ( 
-    <main>
+    <main 
+      style={{ backgroundImage: `url(${ back })` }}
+    >
+      
       <div className='controls'>
         <Head setHead={ setHead } 
           headimg={headimg}/>

@@ -1,6 +1,15 @@
 main{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    flex-direction: row;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:aliceblue;
+    font-weight: bolder;
+    
 }
 
