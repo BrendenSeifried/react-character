@@ -4,7 +4,9 @@ import React from 'react';
 
 export default function Phrase({ setPhrase, phrase, phraseArray, setPhraseArray }) {
   const logPhrase = () => {
+    setPhrase('');
     setPhraseArray((prevState) => [...prevState, phrase]);
+    
   };
   return (
     <div>
